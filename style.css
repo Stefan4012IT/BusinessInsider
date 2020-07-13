@@ -440,7 +440,7 @@ figcaption{
     padding-top: 20px;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 30px;
+    padding-bottom: 80px;
 }
 
 .usluge4 {
@@ -448,6 +448,272 @@ figcaption{
     margin-left: 25%;
     padding-top: 30px;
     display: block;
+}
+
+
+/* ----------------------------------------------------------------------------------------------------------*/
+/* PREDNOSTI */
+/* ----------------------------------------------------------------------------------------------------------*/
+.section-prednosti {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background-color: rgba(248, 248, 248, 0.25);
+}
+
+.prednosti {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 50vw 50vw;
+}
+
+
+
+.prednost-box:first-child {
+    grid-column: 1/2;
+    text-align: right;
+    padding-right: 3%;
+    margin-top: 30px;
+}
+
+.prednost-box:last-child {
+    grid-column: 2/3;
+    padding-left: 3%;
+    margin-top: 70px;
+}
+
+.img-prednost {
+    width: 60%;
+}
+
+.sta-su-prednost {
+    display: flex;
+    margin-bottom: 100px;
+    justify-content: flex-start;
+    align-items:center; 
+}
+
+.sta-su-prednost div {
+    color: #e67e22;
+    border: 2px solid #e67e22;
+    border-radius: 50%;
+    height: 55px;
+    width: 55px;
+    text-align: center;
+    float: left;
+    font-size: 150%;
+    margin-right: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* ----------------------------------------------------------------------------------------------------------*/
+/* Kontakt forma */
+/* ----------------------------------------------------------------------------------------------------------*/
+
+.mapa-forma {
+    margin-top: 75px;
+    padding: 0;
+}
+
+.mapa-box {
+    width: 100%;
+    height: 70vh;
+    position: relative;
+}
+
+.map {
+    width:100%;
+    height: 70vh;
+    position: relative;
+    z-index: 0;
+    background-color: gray;
+}
+
+.form-box {
+    position: absolute;
+    width: 50%;
+    top: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 10;
+    height: 60vh;
+    padding: 40px;
+    border-bottom-left-radius: 20px;
+    display: grid;
+    grid-template-rows: 20% 80%;
+}
+
+.topic {
+    grid-row: 1/2;
+}
+
+.contact-form {
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.inputs {
+    height: 400px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-around;
+    font-size: 22px;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+    width: 70%;
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    font-size: 20px;
+    font-family: inherit;
+    font-weight: 500;
+}
+
+
+*:focus {outline: none;}
+
+.name, 
+.email, 
+.mess {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input[type=submit] {
+    font-size: 20px; 
+}
+
+.form-messages {
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.success {
+    background-color: rgba(0, 189, 86, 0.80);
+    border: 2px solid rgba(0, 189, 86, 0.3);
+}
+.error {
+    background-color: rgba(209, 46, 46, 0.80);
+    border: 2px solid rgba(209, 46, 46, 0.30);
+}
+
+
+/* ----------------------------------------------------------------------------------------------------------*/
+/* FOOTER*/
+/* ----------------------------------------------------------------------------------------------------------*/
+
+footer {
+    background-color: #333;
+    font-size: 80%;
+    height: 33.33vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 90% 10%;
+}
+
+.info {
+    margin-left: 40px;
+    margin-top: 40px;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+
+.naslovni {
+    font-size: 110%;
+}
+
+.footer-nav {
+    list-style: none;
+    color: #888;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.social {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-left: 40px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social-links {
+    list-style: none;
+    font-size: 150%;
+}
+
+.social-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.social-links li a:link,
+.social-links li a:visited {
+    text-decoration: none;
+    border: 0;
+    color: #888;
+}
+
+.social-links li a:hover {
+    font-size:170%;
+    border: 0;
+    color: #888;
+}
+
+.footer-icons {
+    color: #888;
+    font-size: 80%;
+    padding-right: 10px;
+    margin-top: 900;
+}
+
+.face:hover {
+    color: #3b5998;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.insta:hover {
+    color: #c32aa3;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.linkedin:hover {
+    color: #007bb5;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+.copyright{
+    grid-row: 2/3;
+    grid-column: 1/-1;
+    width: 100%;
+}
+
+.copyright p {
+    font-size: 90%;
+    text-align: center;
+    color: #fff;
 }
 
 

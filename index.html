@@ -209,6 +209,101 @@
                 </div>
             </div>
         </section>
+        <section class="section-prednosti" id="prednosti">
+            <div class="row">
+                <h2 class="h2-small">Prednosti u odnosu na druge &mdash; Jednostavno 1, 2, 3</h2>
+            </div>
+            <div class="prednosti">
+                <div class="prednost-box">
+                    <img src="img/prednosti.jpg" alt="Priroda" class="img-prednost">
+                </div>
+                <div class="prednost-box">
+                    <div class="sta-su-prednost">
+                        <div>1</div>
+                        <p>Odgovorni smo za ono šta radimo</p>
+                    </div>
+                    <div class="sta-su-prednost">
+                        <div>2</div>
+                        <p>Dostupni smo uvjek i svakome</p>
+                    </div>
+                    <div class="sta-su-prednost">
+                        <div>3</div>
+                        <p>Uzajamno povjerenje kao naš slogan</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mapa-forma">
+           
+            <div class="mapa-box">
+                <div class="map" id="map"></div>
+                <div class="form-box" id="form">
+                   <h2 class="topic">Ovdje nam možete ostaviti poruku</h2>
+                    <form method="POST" action="" class="contact-form">
+                        <div class="obavjestenja">
+                           <!-- 
+                               <?php
+                                if (empty($_GET)) {
+                                    // no data passed by get
+                                } else {
+                                    if($_GET['success'] == 1){
+                                         echo "<div class=\"form-messages success\">Hvala! Vaša poruka je poslata.</div>";
+                                    }
+                                    if($_GET['success'] == -1){
+                                        echo "<div class=\"form-messages error\">Poruka nije poslata! Pokušajte ponovo.</div>";
+                                    }
+                                }
+                                
+                                ?>
+                                 -->
+                        </div>
+                             <div class="inputs">
+                                 <div class="name">
+                                    <label for="ime">Ime</label>
+                                    <input type="text" name="ime" id="ime" placeholder="Vaše ime i prezime" required/>
+                                </div>
+                                <div class="email">
+                                    <label for="email">Email</label>
+                                    <input type="email" name="email" id="email" placeholder="Vaš e-mail" required/>
+                                </div>
+                                <div class="mess">
+                                    <label for="message">Poruka</label>
+                                    <textarea type="text" name="message" id="message" placeholder="Pišite nam..."></textarea>
+                                </div>
+                                
+                        </div>
+                        <div class="subm">
+                                    <input type="submit" value="Pošalji"/>
+                        </div>
+                    </form>
+                
+            </div>
+        </section>       
+        <footer class="js--section-kontakt" id="kontakt">
+                <div class="info">
+                    <ul class="footer-nav">
+                        <li class="naslovni">BusinessInsider</li>
+                        <li><ion-icon name="compass" class="footer-icons"></ion-icon>Njegoševa 49, Podgorica</li>
+                        <li><ion-icon name="call" class="footer-icons"></ion-icon>+382 20 674654</li>
+                        <li><ion-icon name="call" class="footer-icons"></ion-icon>+382 68 693958</li>
+                        <li><ion-icon name="mail" class="footer-icons"></ion-icon>vgrujicic@insiderbusiness.me</li>
+                        <li><ion-icon name="card" class="footer-icons"></ion-icon>520-1303-46</li>
+                        <li><b>PIB: </b>03241149</li>
+                    </ul>
+                </div>
+                <div class="social">
+                    <ul class="social-links">
+                        <li><a href="#"><ion-icon name="logo-facebook" class="social-icons face"></ion-icon></a></li>
+                        <li><a href="https://www.instagram.com/business_insiderpg/"><ion-icon name="logo-instagram" class="social-icons insta"></ion-icon></a></li>
+                        <li><a href="https://www.linkedin.com/company/business-insider-podgorica"><ion-icon name="logo-linkedin" class="social-icons linkedin"></ion-icon></a></li>
+                    </ul>
+                </div>
+            <div class="copyright">
+                <p>
+                    &copy; 2020 by STEFAN4012IT.
+                </p>
+            </div>
+        </footer>
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 </body>
 </html>
