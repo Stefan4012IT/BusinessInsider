@@ -11,18 +11,98 @@
     }
 }
 */
-
-/* Big tablet to 1200px (widths smaller taht the 1140px row) */
-/*
-@media only screen and (max-width: 1200px){
-    .simpli-slogan {
-        width: 100%;
-        padding: 0 2%;
+@media only screen and (max-width: 1400px){
+    
+    h1 {
+        font-size: 180%;
     }
     
-    .row{
-        padding: 0 2%;    
+    h2 {
+        font-size: 140%;
     }
+    
+    h3 {
+        font-size: 100%;
+    }
+    
+    .objasnjenja {
+        font-size: 90%;
+    }
+    .main-nav {
+        height: 100px;
+    }
+    
+    .main-nav li a:link, 
+    .main-nav li a:visited {
+        font-size: 100%;
+    }
+    
+    .logo {
+        height: 200px;
+    }
+    
+    .sticky .main-nav {
+        height: 50px;
+    }
+    
+    .sticky .logo-sticky {
+        height: 50px;
+    }
+    
+    .karakteristike {
+        display: grid;
+        grid-template-rows: 45% 65%;
+        margin-top: 5vh;
+        margin-bottom: 150px;
+    }
+    
+    .icon-big {
+        font-size: 350%;
+    }
+    
+    .topic {
+        font-size: 120%;
+    }
+    
+    .topic:after {
+        margin-top: 10px;
+    }
+    
+    input[type=submit] {
+        font-size: 16px; 
+    }
+    
+    input[type=text],
+    input[type=email],
+    select,
+    textarea {
+        width: 70%;
+        padding: 5px;
+        border-radius: 3px;
+        border: 1px solid #ccc;
+        font-size: 16px;
+        font-family: inherit;
+        font-weight: 500;
+    }
+    
+    .inputs {
+        font-size: 18px;
+    }
+    
+    footer {
+        font-size: 65%;
+    }
+    
+    .copyright p {
+        font-size: 70%;
+    }
+}
+/* Big tablet to 1200px (widths smaller taht the 1140px row) */
+
+@media only screen and (max-width: 1200px){
+    
+    
+    
     .img-prednost {
         width: 60%;
         padding-top: 50px;
@@ -30,67 +110,34 @@
     .h2-small {
         font-size: 160%;
     }
-    .usluge1{
-        height: 1000px;
-    }
-    .usluge2{
-        height: 450px;
-    }
+    
 }
-*/
+
 
 /* Small tablet to big tablet from 768 to 1023 */
-/*
+
 @media only screen and (max-width: 1023px){
-    .body{
+    body{
         font-size: 18px;
-    }   
-    section {
-        padding: 60px 0;
-    }
-    .main-nav {
-        font-size: 88%;
-    }
-    .main-nav li {
-    display: inline-block;
-    margin-left: 20px;
-}
-    .h3-small {
-        font-size: 90%;
-    }
-    .karakteristike .recenica-dvije{
-        width: 80%;
-        margin-left: 10%;
-        margin-bottom: 30px;
-    }
-    .karakteristike .objasnjenja {
-        font-size: 70%;
-    }
-    .djelatnosti{
-        font-size: 90%;
+    } 
+    
+    .sta-su-prednost{
+        margin-bottom: 60px;
     }
     
-    .prednost-box {
-        margin-top: 0px;
+    .sta-su-prednost div {
+        width: 40px;
+        height: 40px;
+        font-size: 110%;
     }
-    .img-prednost {
-        width: 60%;
-        padding-top: 50px;
-    }
-    .sta-su-prednost {
-        margin-bottom: 40px;
-    }
-    .usluge1{
-        height: 1220px;
-    }
-    .usluge2{
-        height: 580px;
+    
+    .prednost-box:first-child {
+        margin-top: 15px;
     }
 }
-*/
 
 /* Small phones to small tablets: From 481 to 767 */
-/*
+
 @media only screen and (max-width: 767px){
     body {
         font-size: 16px;
@@ -106,45 +153,93 @@
     }
     
     .simpli-slogan {
-        margin-top: 50px;
+        position: absolute;
+        width: 50%;
+        top: 25%;
+        left: 0;
+        z-index: 1;
     }
     
-    .col {
-        width: 100%;
+    .logo {
+        height: 150px;
     }
     
    .main-nav {
         display: none;
-        z-index: 9999;
-        position: relative;
     }
     
     .mobil-nav-icon {
         display: inline-block;
+        position: relative;
+        float: right;
+        margin-right: 50px;
+        margin-top: 50px;
     }
     
-    .main-nav {
-        float: left;
+    .mobil-nav-icon-close {
+        display: inline-block;
+        position: relative;
+        float: right;
+        margin-right: 0px;
+        margin-top: 50px;
+        z-index: 1;
+    }
+    
+    .mobil-nav-icon-close .close{
         margin-top: 30px;
-        margin-left: 25px;
+        margin-right: 15px;
     }
     
-    .main-nav li {
-        display: block;
+    .main-nav ul{
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-around;
+        position: relative;
+        margin-top: 20px;
+        margin-right: 75px;
+        z-index: 100;
     }
     
-    .main-nav li a:link,
+    .main-nav ul li:last-child {
+        margin-right: 0;
+    }
+    
+    .main-nav li a:link, 
     .main-nav li a:visited {
-        display: block;
-        border: 0;
-        padding: 10px 0;
-        font-size: 100%;
+        border-bottom: none;
+    }
+    
+    .main-nav li a:hover, 
+    .main-nav li a:active {
+        border-bottom: none;
+    }
+    
+    .sticky {
+        background-color: rgba(51, 51, 51, 0.9);
+    }
+    
+    .sticky .mobil-nav-icon{
+        display: inline-block;
+        position: relative;
+        margin-right: 50px;
+        margin-top: 9px;
+    }
+    
+    .sticky .main-nav {
+        display: none;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-between;
+        position: relative;
     }
     
     .sticky .main-nav li a:link, 
     .sticky .main-nav li a:visited{
         padding: 10px 0;
-
+    }
+    .sticky .main-nav li a:active, 
+    .sticky .main-nav li a:hover{
+        color: #fff;
     }
 
     .sticky .logo {
@@ -159,72 +254,183 @@
         margin-top: 0px;
     }
     
-    .sticky .main-nav {
-        margin-top: 10px;
-        
-    }
     
     .sticky .icon-menu {
-        color: #555;
+        color: #fff;
     }
     
-    .sticky .icon-menu{
-        margin-top: -10px;
-        
+    .simpli-slogan {
+        position: absolute;
+        width: 50%;
+        top: 50%;
+        left: 0;
+        z-index: 1;
     }
     
     h1 {
-        font-size: 180%;
-        padding-top: 150px;
+        font-size: 140%;
     }
     
     h2 {
-        font-size: 150%;
+        margin-bottom: 15px;
+        font-size: 100%;
     }
+    
+    h2:after {
+        margin-top: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+    }
+    
+    .h3-small {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .objasnjenja {
+        margin-bottom: 10px;
+    }
+    
+    .karakteristike {
+        grid-template-rows: 25% 75%;
+    }
+    .row-karakteristike {
+        margin-top: 10px;    
+    }
+    
+    .row-objasnjenja {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+    }
+    
+    
+    
     figcaption{
         font-size: 70%;
     }
+    
+    
+    .usluge {
+        display: grid;
+        grid-template-rows: (6, 1fr);
+    }
+    
+    .pravo {
+        grid-row: 1/2;
+    }
+    
+    .racunovodstvo {
+        grid-row: 2/3;
+    }
+    
+    .programiranje {
+        grid-row: 3/4;
+    }
+    
+    .nekretnine {
+        grid-row: 4/5;
+    }
+    
+    .marketing {
+        grid-row: 5/6;
+    }
+    
+    .mystery {
+        grid-row: 6/7;
+    }
+    
+    .pravo-racunovodstvo {
+        display: inherit;
+        grid-template-columns: none;
+        color: #fff;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .programiranje-nekretnine-marketing {
+        display: inherit;
+        grid-template-columns: none;
+        grid-gap: 15px;
+        color: #fff;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .prednosti {
+        margin-top: 50px;
+        display: inherit;
+        grid-template-columns: none;
+        grid-template-rows: (2, 1fr);
+        width: 100%;
+    }
+    
+    .prednost-box:first-child {
+        grid-row: 1/2;
+        margin-top: 15px;
+        width: 80%;
+    }
+
+    .prednost-box:last-child {
+        display: inherit;
+        grid-row: 2/3;
+        position: relative;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto; 
+    }
+
     .img-prednost {
-        width: 100%;
-        padding-top: 10px;
-        text-align: center;
-    }
-    .mobil-col-1-of-2 {
-        width: 49.2%;
+        width: 60%;
     }
     
-    .usluge1 {
-        height: 700px;
-    }
-    .usluge2 {
-        height: 230px;
-    }
-    .usluge3{
-        height: 340px;
+    .sta-su-prednost {
+        display: flex;
+        
+        margin-bottom: 40px;
+        justify-content: flex-start;
+        align-items: center; 
     }
     
     
-     .map-box {
-        width: 100%;
-        height: auto;
-        position: relative;
+    .topic {
+        font-size: 100%;
     }
-
-    .map {
-        width:100%;
-        height: 300px;
-        position: relative;
-        z-index: 0;
+    
+    .topic:after {
+        margin-top: 5px;
     }
-
-    .form-box {
-        position: relative;
-        width: 100%;
-        height: auto;
-        padding: 30px 0;
+    
+    .inputs {
+        height: 400px;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: space-around;
+        font-size: 16px;
     }
+    
+    input[type=text],
+    input[type=email],
+    select,
+    textarea {
+        font-size: 12px;
+        font-family: inherit;
+        font-weight: 600;
+    }
+    
+    input[type=submit] {
+        font-size: 12px; 
+    }
+    
+    
 }
-*/
+
 
 /* Small phones: from 0 to 480px */
 /*

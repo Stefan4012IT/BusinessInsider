@@ -91,6 +91,35 @@ h3 {
     text-align: center;
 }
 
+.mobil-nav-icon {
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.mobil-nav-icon-close {
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.mobil-nav-icon .icon-menu{
+    font-size: 200%;
+    color: #fff;
+    position: relative;
+    transition: all .6s;
+}
+
+.mobil-nav-icon-close .icon-menu-close{
+    font-size: 200%;
+    color: #fff;
+    position: relative;
+}
+
+.close {
+    display: none;
+}
+
 /* ------ DUGMICI -------*/
 .btn:link,
 .btn:visited,
@@ -172,24 +201,26 @@ header {
 
 /* Main Navi */
 
-.main-nav {
+.main-nav ul{
+    position: absolute;
+    width: 100%;
     height: 150px;
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
     align-items: center;
+    justify-content: flex-end;
 }
 
 .main-nav ul {
     list-style: none;
 }
 
-.main-nav li {
-    margin-left: 10%;
+.main-nav ul li {
+    margin-left: 2%;
 }
 
-.main-nav li:last-child {
-    margin-right: 20%;
+.main-nav ul li:last-child {
+    margin-right: 3%;
 }
 
 .main-nav li a:link, 
@@ -223,7 +254,7 @@ header {
 .sticky .main-nav li a:link, 
 .sticky .main-nav li a:visited{
     
-    color: #555;
+    color: #fff;
     
 }
 .sticky:hover{
@@ -438,10 +469,10 @@ figcaption{
 .usluge1 {
     list-style: circle;
     width: 70%;
-    display: flex;
-    flex-direction: column;
     margin-left: auto;
     margin-right: auto;
+    display: flex;
+    flex-direction: column;
     margin-bottom: 30px;
 }
 
@@ -459,6 +490,7 @@ figcaption{
 
 .usluge2 li {
     padding-bottom: 5px;
+    
 }
 
 .mystery {

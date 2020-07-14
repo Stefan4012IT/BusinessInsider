@@ -70,12 +70,18 @@ $(document).ready(function() {
     /* Mobile navigation*/
     
     $('.js--nav-icon').click(function() {
-        var nav = $ ('.js--main-nav');
-        nav.slideToggle(200);
-        
+        $('.main-nav').css('display', 'flex');
+        $('.icon-menu').css('display', 'none');
+        $('.close').css('display', 'inline-block');
     });
     
-    
-    
+    $('.close').click(function() {
+        $('.main-nav').css('display', 'none');
+        $('.icon-menu').css('display', 'inline-block');
+        $('.close').css('display', 'none');
+    });
    
 });
+
+
+
