@@ -206,10 +206,56 @@ header {
 .main-nav li a:hover, 
 .main-nav li a:active {
     border-bottom: 2px solid #e67e22;
-    transform: scale(1.8);
 }
 
+/* Sticky Nav */
 
+.sticky {
+    position: fixed;
+    top 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 2px 2px #efefef;
+    z-index: 9999;
+}
+
+.sticky .main-nav li a:link, 
+.sticky .main-nav li a:visited{
+    
+    color: #555;
+    
+}
+.sticky:hover{
+    background-color: rgba(51, 51, 51, 0.9);
+    transition: .5s;
+}
+.sticky:hover .main-nav li a {
+    color: #fff;
+}
+
+.sticky .main-nav li a:hover,
+.sticky .main-nav li a:active{
+    color: #e67e22;
+    transition: .6s;
+}
+
+.sticky .logo {
+    display: none;
+}
+
+.sticky .logo-sticky {
+    display: block;
+    height: 75px;
+    width: auto;
+    float: left;
+    margin-top: 0px;
+    margin-left: 5%;
+}
+
+.sticky .main-nav {
+    height: 75px;
+}
 
 /* ----------------------------------------------------------------------------------------------------------*/
 /* KARAKTERISTIKE */
@@ -619,7 +665,7 @@ input[type=submit] {
 /* ----------------------------------------------------------------------------------------------------------*/
 
 footer {
-    background-color: #333;
+    background-color: rgb(51, 51, 51);
     font-size: 80%;
     height: 33.33vh;
     display: grid;
