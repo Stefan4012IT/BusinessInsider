@@ -230,7 +230,7 @@
         flex-direction: column;
         align-items: flex-end;
         justify-content: space-between;
-        position: relative;
+        color: #fff;
     }
     
     .sticky .main-nav li a:link, 

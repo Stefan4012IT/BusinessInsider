@@ -251,10 +251,18 @@ header {
     z-index: 9999;
 }
 
+.sticky .main-nav {
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    color: #555;
+}
+
 .sticky .main-nav li a:link, 
 .sticky .main-nav li a:visited{
-    
-    color: #fff;
+    color: #555;
     
 }
 .sticky:hover{
