@@ -1,15 +1,39 @@
 $(document).ready(function() {
     
     /* Sticky-nav*/
-    $('.js--section-karakteristike').waypoint(function(direction) {
-        if(direction == "down"){
-            $('nav').addClass('sticky');
-        }else{
-            $('nav').removeClass('sticky');
-        }
-    }, {
-        offset:'65px;'
-    });
+    if ($(window).width() <= 768) {  
+        $('.js--section-karakteristike').waypoint(function(direction) {
+            if(direction == "down"){
+                $('nav').addClass('sticky');
+                $('.main-nav-mobile').css('display', 'none');
+                $('.icon-menu').css('display', 'inline-block');
+                $('.close').css('display', 'none');
+                $('.js--nav-icon').click(function() {
+                    $('.sticky .logo-sticky').css({transform: 'scale(2)', marginTop: '50px', marginLeft: '50px'});
+                });
+                $('.close').click(function() {
+                    $('.sticky .logo-sticky').css({transform: 'scale(1)', marginTop: '0', marginLeft: '5%'});
+                });
+                    
+            }else{
+                $('nav').removeClass('sticky');
+            }
+        }, {
+            offset:'65px;'
+        });
+
+    }else{
+        $('.js--section-karakteristike').waypoint(function(direction) {
+            if(direction == "down"){
+                $('nav').addClass('sticky');
+            }else{
+                $('nav').removeClass('sticky');
+            }
+        }, {
+            offset:'65px;'
+        });
+    }
+    
     
     /* Scroll on buttons */
     
@@ -70,13 +94,13 @@ $(document).ready(function() {
     /* Mobile navigation*/
     
     $('.js--nav-icon').click(function() {
-        $('.main-nav').css('display', 'flex');
+        $('.main-nav-mobile').css('display', 'flex');
         $('.icon-menu').css('display', 'none');
         $('.close').css('display', 'inline-block');
     });
     
     $('.close').click(function() {
-        $('.main-nav').css('display', 'none');
+        $('.main-nav-mobile').css('display', 'none');
         $('.icon-menu').css('display', 'inline-block');
         $('.close').css('display', 'none');
     });
