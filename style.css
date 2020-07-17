@@ -367,22 +367,23 @@ header {
     justify-content: center;
 }
 
-.grupa1 .pravo, 
-.grupa1 .racunovodstvo, 
-.grupa1 .marketing, 
-.grupa1 .nekretnine {
+.grupa1 .pravoF, 
+.grupa1 .racunovodstvoF, 
+.grupa1 .marketingF, 
+.grupa1 .nekretnineF {
     display: inline-block;
     width: 20%;
 }
 
-.grupa2 .programiranje, 
-.grupa2 .mysteryshopping {
+.grupa2 .programiranjeF, 
+.grupa2 .mysteryshoppingF {
     display: inline-block;
-    width: 20%;
+    width: 20%;    
 }
 
 .usluge-foto {
     width: 100%;
+    height: 100%;
     margin: 0;
     overflow: hidden;
     background-color: #000;
